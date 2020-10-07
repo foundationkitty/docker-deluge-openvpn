@@ -36,7 +36,7 @@ ENV OPENVPN_USERNAME=**None** \
     WEBPROXY_PASSWORD= \
     HEALTH_CHECK_HOST=google.com \
     DOCKER_LOG=false \
-    LOG_TO_STDOUT=false
+    LOG_TO_STDOUT=false \
     DROP_DEFAULT_ROUTE=
 	
 HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
