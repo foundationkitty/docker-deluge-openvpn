@@ -45,4 +45,3 @@ HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
 # Expose port and run
 EXPOSE 9091
 EXPOSE 8888
-CMD ["dumb-init", "/etc/openvpn/start.sh"]
