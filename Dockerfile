@@ -15,8 +15,9 @@ RUN apt update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-COPY root/ /
+ADD openvpn/ /etc/openvpn/
 ADD scripts /etc/scripts/
+ADD tinyproxy /opt/tinyproxy/
 
 ENV OPENVPN_USERNAME=**None** \
     OPENVPN_PASSWORD=**None** \
